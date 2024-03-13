@@ -36,12 +36,14 @@ const Header = () => {
             {/* <Box border={"none"}> */}
             <TextField
               placeholder="Search Jobs"
+              size="small"
               sx={{
                 border: "3px solid",
                 borderRadius: "50px",
                 outline: "transparent",
                 width: "55%",
                 color: "#fff",
+
                 "& input": {
                   color: "#fff", // Set text color to white
                   fontSize: "1rem",
