@@ -1,8 +1,8 @@
-import logo from "./assets/logo.svg";
+// import logo from "./assets/logo.svg";
 import "./App.css";
 
 // imported libraries
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // imported components
 import Header from "./components/Header";
@@ -15,17 +15,14 @@ import About from "./pages/About";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/header" component={Header} />
-        <Route path="/footer" component={Footer} />
-        <Route path="/about" component={About} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+
+        <Route path="/header" element={<Header />} />
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
     </Router>
-    // <div className="App">
-    //   Hello
-    //   <img src={logo} alt="alt prop" />
-    // </div>
   );
 }
 
