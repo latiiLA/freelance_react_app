@@ -1,7 +1,23 @@
 import React from "react";
 
 // Material UI imports
-import { Box, Button, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  TextField,
+  Typography,
+  Divider,
+  TextareaAutosize,
+} from "@mui/material";
+
+// Social Media Icons
+import XIcon from "@mui/icons-material/X";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import SmartphoneIcon from "@mui/icons-material/Smartphone";
+import PublicIcon from "@mui/icons-material/Public";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Footer = () => {
   return (
@@ -22,7 +38,7 @@ const Footer = () => {
             width: "15%",
             color: "white",
 
-            //   backgroundColor: "red",
+            // backgroundColor: "red",
           }}
         >
           <Typography
@@ -34,6 +50,7 @@ const Footer = () => {
           >
             Ethiofreelance
           </Typography>
+          <Divider sx={{ backgroundColor: "#fff" }} />
         </Box>
         <Box
           sx={{
@@ -94,11 +111,22 @@ const Footer = () => {
           color: "#fff",
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            width: "15%",
+            // backgroundColor: "yellow",
+          }}
+        >
           <Typography sx={{ fontSize: "1.2rem", fontWeight: "bold" }}>
             About Us
           </Typography>
-          <Typography>About Us</Typography>
+          <Typography sx={{ fontSize: "1rem" }}>
+            EthioFreelance is a thrusted and a growing web based freelancing
+            system providing a platform for connecting freelancers and employers
+            from anywhere.
+          </Typography>
         </Box>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <Typography sx={{ fontSize: "1.2rem", fontWeight: "bold" }}>
@@ -118,15 +146,76 @@ const Footer = () => {
           <Typography>Tips</Typography>
           <Typography>FAQ</Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <TextField></TextField>
-          <TextField></TextField>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            gap: 1,
+          }}
+        >
+          <TextareaAutosize
+            placeholder="Leave your comment here"
+            minRows={4}
+            maxRows={4}
+            style={{ backgroundColor: "#fff", minHeight: 20, maxHeight: 80 }}
+          />
+
+          <TextField
+            placeholder="Email: optional"
+            size="small"
+            sx={{
+              backgroundColor: "#fff",
+              border: "none",
+
+              "& input": {
+                color: "#000", // Set text color to white
+                fontSize: "1rem",
+              },
+            }}
+          ></TextField>
 
           <Button variant="contained">Submit</Button>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          Social Media Links
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <Box>
+            <Typography
+              sx={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                gap: 5,
+              }}
+            >
+              Contact Us
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 3 }}>
+              <TelegramIcon />
+              <LinkedInIcon />
+              <FacebookIcon />
+              <XIcon />
+            </Box>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
+              <SmartphoneIcon />
+              <Typography>+2519676385**</Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
+              <EmailIcon />
+              <Typography>ethiofreelance@gmail.com</Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
+              <PublicIcon />
+              <Typography>Addis Ababa, Ethiopia</Typography>
+            </Box>
+          </Box>
         </Box>
+      </Box>
+      <Box>
+        <Divider sx={{ backgroundColor: "#fff", marginBottom: "5px" }} />
+        <Typography sx={{ color: "#fff", textAlign: "center" }}>
+          Copyright © 2021 EthioFreelance. All right reserved
+        </Typography>
       </Box>
     </Box>
   );
