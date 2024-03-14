@@ -33,13 +33,21 @@ import Code from "@mui/icons-material/Code";
 
 const Categories = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: 5,
+        marginBottom: "5rem",
+      }}
+    >
       <Box>
+        <Divider sx={{ backgroundColor: "#000", margin: "2rem" }} />
         <Typography
           sx={{
             fontSize: "2rem",
             textAlign: "center",
-            marginBottom: "1.5rem",
+            // marginBottom: "1.5rem",
           }}
         >
           Browse through different job categories and sub categories
