@@ -4,7 +4,7 @@ import homeimage from "../assets/homepageimg.png";
 
 const Homebody = () => {
   return (
-    <Box sx={{ margin: "16px" }}>
+    <Box sx={{ marginX: "16px", marginBottom: "5rem" }}>
       <Box
         sx={{
           display: "flex",
@@ -156,7 +156,7 @@ const Homebody = () => {
           </Typography>
         </Box>
       </Box>
-      <Divider sx={{ backgroundColor: "#000" }} />
+      {/* <Divider sx={{ backgroundColor: "#000", marginY: "2rem" }} /> */}
     </Box>
   );
 };
