@@ -6,7 +6,7 @@ import { Toolbar } from "@mui/material";
 
 const Header = () => {
   return (
-    <Box>
+    <Box sx={{ marginBottom: "5rem" }}>
       <AppBar sx={{ backgroundColor: "#182c41" }}>
         <Toolbar
           sx={{
