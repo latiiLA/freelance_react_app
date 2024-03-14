@@ -6,7 +6,14 @@ import { Box, Typography } from "@mui/material";
 const Howitworks = () => {
   return (
     <Box>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 5 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 5,
+          marginBottom: "5rem",
+        }}
+      >
         <Typography
           sx={{ fontSize: "3rem", fontWeight: "bold", textAlign: "center" }}
         >
