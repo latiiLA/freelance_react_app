@@ -14,6 +14,8 @@ import Categories from "./components/Categories";
 // imported pages
 import Home from "./pages/Home";
 import About from "./pages/About";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/homebody" element={<Homebody />} />
         <Route path="/howitworks" element={<Howitworks />} />
         <Route path="/categories" element={<Categories />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
