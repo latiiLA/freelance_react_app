@@ -13,6 +13,8 @@ const JobCard = () => {
               justifyContent: "space-between",
               paddingX: "2rem",
               paddingY: "2.5rem",
+              border: "0.2rem solid #F5F5F5",
+              boxShadow: "0.2rem 0.2rem #F5F5F5",
             }}
           >
             <Typography>Posted 2 weaks ago</Typography>
