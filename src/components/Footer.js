@@ -21,7 +21,12 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: "#182c41", padding: "16px" }}>
+    <Box
+      sx={{
+        backgroundColor: "#182c41",
+        padding: "16px",
+      }}
+    >
       <Box
         sx={{
           display: "flex",
