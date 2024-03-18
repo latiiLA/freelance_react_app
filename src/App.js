@@ -11,6 +11,8 @@ import Homebody from "./components/Homebody";
 import Howitworks from "./components/Howitworks";
 import Categories from "./components/Categories";
 import JobCard from "./components/JobCard";
+import JobDetail from "./components/JobDetail";
+import Filter from "./components/Filter";
 
 // imported pages
 import Home from "./pages/Home";
@@ -34,6 +36,7 @@ function App() {
         <Route path="/post" element={<PostJobs />} />
         <Route path="/emppro" element={<EmployerProfile />} />
         <Route path="/frepro" element={<FreelancerProfile />} />
+        <Route path="/filter" element={<Filter />} />
 
         <Route path="/header" element={<Header />} />
         <Route path="/footer" element={<Footer />} />
@@ -41,6 +44,7 @@ function App() {
         <Route path="/howitworks" element={<Howitworks />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/card" element={<JobCard />} />
+        <Route path="/detail" element={<JobDetail />} />
       </Routes>
     </Router>
   );
