@@ -39,8 +39,8 @@ const Login = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        marginTop: "auto",
-        gap: 15,
+        // marginTop: "auto",
+        gap: 18,
       }}
     >
       <Box>

@@ -33,6 +33,14 @@ const SignUp = () => {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
+
+  const [showPassword2, setShowPassword2] = React.useState(false);
+
+  const handleClickShowPassword2 = () => setShowPassword2((show) => !show);
+
+  const handleMouseDownPassword2 = (event) => {
+    event.preventDefault();
+  };
   return (
     <Box
       sx={{
@@ -40,7 +48,7 @@ const SignUp = () => {
         flexDirection: "column",
         justifyContent: "space-between",
         marginTop: "auto",
-        gap: 6,
+        gap: 8,
       }}
     >
       <Box>
@@ -109,21 +117,21 @@ const SignUp = () => {
           </FormControl>
 
           <FormControl required variant="contained">
-            <InputLabel htmlFor="filled-adornment-password">
-              Confirm Password
+            <InputLabel htmlFor="filled-adornment-password2">
+              Password
             </InputLabel>
             <FilledInput
-              id="filled-adornment-password"
-              type={showPassword ? "text" : "password"}
+              id="filled-adornment-password2"
+              type={showPassword2 ? "text" : "password"}
               endAdornment={
                 <InputAdornment position="end">
                   <IconButton
                     aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
+                    onClick={handleClickShowPassword2}
+                    onMouseDown={handleMouseDownPassword2}
                     edge="end"
                   >
-                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                    {showPassword2 ? <VisibilityOff /> : <Visibility />}
                   </IconButton>
                 </InputAdornment>
               }
@@ -146,7 +154,7 @@ const SignUp = () => {
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
-              marginX: "7rem",
+              marginX: "6rem",
             }}
           >
             <FormLabel id="demo-row-radio-buttons-group-label">
@@ -162,7 +170,7 @@ const SignUp = () => {
                 flexDirection: "row",
                 justifyContent: "space-evenly",
                 alignItems: "center",
-                // gap: 5,
+                // gap: 1,
               }}
             >
               <FormControlLabel
@@ -181,7 +189,7 @@ const SignUp = () => {
         <Box>
           <Button
             variant="contained"
-            sx={{ alignItems: "center", width: "45%" }}
+            sx={{ display: "flex", width: "70%", margin: "auto" }}
           >
             SignUp
           </Button>

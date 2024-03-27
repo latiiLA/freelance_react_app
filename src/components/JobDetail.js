@@ -21,9 +21,11 @@ const JobDetail = () => {
           display: "flex",
           flexDirection: "column",
           gap: 3,
-          borderLeft: "0.2rem solid #F5F5F5",
-          borderRight: "0.2rem solid #F5F5F5",
-          boxShadow: "0.5rem 0.5rem #333333",
+          border: "0.2rem solid #333333",
+          borderLeft: "0.2rem solid #333333",
+          borderRight: "0.2rem solid #333333",
+          // boxShadow: "0.5rem 0.5rem #333333",
+          borderRadius: "2rem",
           width: "50%",
           marginX: "auto",
           padding: "2rem",
@@ -34,7 +36,7 @@ const JobDetail = () => {
             display: "flex",
             flexDirection: "column",
             gap: 3,
-            borderBottom: "0.2rem solid #F5F5F5",
+            borderBottom: "0.2rem solid #333333",
           }}
         >
           <Box>
@@ -46,7 +48,7 @@ const JobDetail = () => {
           </Box>
           <Box
             sx={{
-              borderTop: "0.2rem solid #F5F5F5",
+              borderTop: "0.2rem solid #333333",
               paddingY: "2rem",
             }}
           >
@@ -89,8 +91,8 @@ const JobDetail = () => {
             display: "flex",
             flexDirection: "column",
             gap: 1,
-            borderTop: "0.2rem solid #F5F5F5",
-            borderBottom: "0.2rem solid #F5F5F5",
+            borderTop: "0.2rem solid #333333",
+            borderBottom: "0.2rem solid #333333",
             paddingY: "2rem",
           }}
         >
